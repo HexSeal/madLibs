@@ -1,5 +1,4 @@
 import subprocess
-import random
 
 # Parts of Speech
 n = []
@@ -67,4 +66,5 @@ def story():
     print("I lost my " + n[0] + ", which put me in a " + adj[2] + " mood.")
     print("I picked up my " + n[3] + " to check the time. Yikes! I was already " + getNumber() + " minutes late!")
     print("I " + adv[0] + " threw on some clothes and ran to the bathroom to " + v[3] + " my " + n[1])
-    print()
+    print("Suddenly, the hangover hit.")
+    print("My brain felt like " + adj[0] + ". ")
