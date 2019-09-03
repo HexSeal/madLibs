@@ -59,6 +59,8 @@ def getNumber():
         num = 30
     return num
 
+# Haven't used yet: v012, adv 02 
+
 def story():
     print("\n")
     print("I " + adv[2] + "rose from my bed")
@@ -67,4 +69,5 @@ def story():
     print("I picked up my " + n[3] + " to check the time. Yikes! I was already " + getNumber() + " minutes late!")
     print("I " + adv[0] + " threw on some clothes and ran to the bathroom to " + v[3] + " my " + n[1])
     print("Suddenly, the hangover hit.")
-    print("My brain felt like " + adj[0] + ". ")
+    print("My brain felt like " + adj[0] + ". I slumped to the floor like a bag of " + "(e)s.")
+    print("Just then, my brain had a " + n[2] + " of pure " + adj[1] + "! My JUUL was on my nightstand!")
