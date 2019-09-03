@@ -1,4 +1,5 @@
 import subprocess
+import random
 
 # Parts of Speech
 n = []
@@ -6,11 +7,13 @@ v = []
 adj = []
 adv = []
 
-print("\n")
-print("Max's Mad Libs")
-print("Please fill in the parts of speech to create your own crazy story!")
-print("\n")
 
+
+def welcomeMessage():
+    print("\n")
+    print("Max's Mad Libs")
+    print("Please fill in the parts of speech to create your own crazy story!")
+    print("\n")
 
 
 def getNoun():
@@ -27,7 +30,7 @@ def getVerb():
     print("\n")
 
     for i in range(1, 4):
-        n.append(input("Input verb " + str(i) + ": "))
+        v.append(input("Input verb " + str(i) + ": "))
 
     subprocess.run("clear")
 
@@ -36,7 +39,7 @@ def getAdjective():
     print("\n")
 
     for i in range(1, 4):
-        n.append(input("Input adjective " + str(i) + ": "))
+        adj.append(input("Input adjective " + str(i) + ": "))
 
     subprocess.run("clear")
 
@@ -45,7 +48,23 @@ def getAdverb():
     print("\n")
 
     for i in range(1, 4):
-        n.append(input("Input adverb " + str(i) + ": "))
+        adv.append(input("Input adverb " + str(i) + ": "))
 
     subprocess.run("clear")
 
+def getNumber():
+    num = input("Please enter an integer 1-5: ")
+    if num <= 5:
+        num = num*10
+    else:
+        num = 30
+    return num
+
+def story():
+    print("\n")
+    print("I " + adv[2] + "rose from my bed")
+    print("My head was spinning. The party last night was " + adj[3] + ".")
+    print("I lost my " + n[0] + ", which put me in a " + adj[2] + " mood.")
+    print("I picked up my " + n[3] + " to check the time. Yikes! I was already " + getNumber() + " minutes late!")
+    print("I " + adv[0] + " threw on some clothes and ran to the bathroom to " + v[3] + " my " + n[1])
+    print()
